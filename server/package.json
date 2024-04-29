@@ -5,10 +5,7 @@
   "scripts": {
     "start": "nodemon src/index.js"
   },
-  "author": {
-    "name": "Safdar Jamal",
-    "url": "https://safdarjamal.github.io"
-  },
+  
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",

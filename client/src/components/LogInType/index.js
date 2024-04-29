@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import * as ROUTES from '../../constants/routes';
 
+
+
 const LogInType = () => {
   return (
     <Container className="col-md-4">

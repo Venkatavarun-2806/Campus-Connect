@@ -6,7 +6,7 @@ const validateSignUp = data => {
     lastName: Joi.string().required(),
     email: Joi.string().email({ minDomainSegments: 2 }).required(),
     password: Joi.string()
-      .pattern(new RegExp('^[a-zA-Z0-9]{6,64}$'))
+    .pattern(new RegExp('^[a-zA-Z0-9!@#$%^&*]{6,64}$'))
       .required(),
   });
 

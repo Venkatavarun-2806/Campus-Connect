@@ -8,19 +8,7 @@
     "client": "cd client && npm start",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SafdarJamal/campus-recruitment-system.git"
-  },
-  "author": {
-    "name": "Safdar Jamal",
-    "url": "https://safdarjamal.github.io"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/SafdarJamal/campus-recruitment-system/issues"
-  },
-  "homepage": "https://github.com/SafdarJamal/campus-recruitment-system#readme",
+  
   "devDependencies": {
     "concurrently": "^8.2.0"
   }

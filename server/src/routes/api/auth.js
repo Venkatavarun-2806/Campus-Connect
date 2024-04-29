@@ -9,6 +9,7 @@ const Student = require('../../models/Student');
 
 const { ADMIN, COMPANY, STUDENT } = require('../../constants/roles');
 const { validateSignUp, validateLogIn } = require('../../validation');
+const key="eoifkjefeu6193611986"
 
 router.post('/signup/:role', async (req, res) => {
   const { role } = req.params;
@@ -37,7 +38,7 @@ router.post('/signup/:role', async (req, res) => {
       password: hash,
     });
 
-    const token = jwt.sign({ _id: company._id, role }, process.env.JWT_SECRET);
+    const token = jwt.sign({ _id: company._id, role }, key);
 
     company
       .save()
@@ -56,7 +57,7 @@ router.post('/signup/:role', async (req, res) => {
       password: hash,
     });
 
-    const token = jwt.sign({ _id: student._id, role }, process.env.JWT_SECRET);
+    const token = jwt.sign({ _id: student._id, role }, key);
 
     student
       .save()
@@ -89,7 +90,7 @@ router.post('/login/:role', async (req, res) => {
     if (!checkPassword)
       return res.status(400).send({ message: 'The password is invalid.' });
 
-    const token = jwt.sign({ _id: user._id, role }, process.env.JWT_SECRET);
+    const token = jwt.sign({ _id: user._id, role }, key);
 
     const userData = user.toObject();
     delete userData.password;
@@ -107,7 +108,7 @@ router.post('/login/:role', async (req, res) => {
     if (!checkPassword)
       return res.status(400).send({ message: 'The password is invalid.' });
 
-    const token = jwt.sign({ _id: user._id, role }, process.env.JWT_SECRET);
+    const token = jwt.sign({ _id: user._id, role }, key);
 
     const userData = user.toObject();
     delete userData.password;
@@ -125,7 +126,7 @@ router.post('/login/:role', async (req, res) => {
     if (!checkPassword)
       return res.status(400).send({ message: 'The password is invalid.' });
 
-    const token = jwt.sign({ _id: user._id, role }, process.env.JWT_SECRET);
+    const token = jwt.sign({ _id: user._id, role }, key);
 
     const userData = user.toObject();
     delete userData.password;

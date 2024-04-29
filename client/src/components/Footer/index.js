@@ -11,13 +11,10 @@ const Footer = () => {
         fixed="bottom"
       >
         <Navbar.Text>
-          © 2020-2023{' '}
+          ©CAMPUS RECRUITMENT SYSTEM {' '}
           <a
-            href="https://safdarjamal.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            Safdar Jamal
+            @CAMPUS CONNECT
           </a>
         </Navbar.Text>
       </Navbar>

@@ -11,10 +11,11 @@ const studentsRouter = require('./routes/api/students');
 const jobsRouter = require('./routes/api/jobs');
 const profileRouter = require('./routes/api/profile');
 
-mongoose
-  .connect(process.env.MONGO_DB_URI)
-  .then(() => console.log('Connected to DB!'))
-  .catch(error => console.log(error));
+const uri = "mongodb+srv://509:varun9989@cluster0.4elj2vx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" // Make sure this is correctly set in your environment variables
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('Error connecting to MongoDB', err));
 
 const app = express();
 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../../images/logo.svg';
+import logo from '../../images/image.png';
 import { LinkContainer } from 'react-router-bootstrap';
 import * as ROUTES from '../../constants/routes';
 
