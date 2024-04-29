@@ -2,15 +2,6 @@
 
 A recruiting software built with [React](https://reactjs.org)/[Redux](https://redux.js.org) (Client), [Node](https://nodejs.org)/[Express](https://expressjs.com) (API), and [MongoDB](https://www.mongodb.com) (Database).
 
-## Development
-
-To get a local copy of the code, clone it using git:
-
-```
-git clone https://github.com/SafdarJamal/campus-recruitment-system.git
-cd campus-recruitment-system
-```
-
 Install dependencies:
 
 ```
@@ -34,10 +25,3 @@ And then open http://localhost:3000 to view it in the browser.
 | npm run client | Runs the client-side code.        |
 | npm start      | Runs the app in development mode. |
 
-## Credits
-
-Campus Recruitment System is built and maintained by [Safdar Jamal](https://safdarjamal.github.io).
-
-## License
-
-This project is licensed under the terms of the [Apache License 2.0](https://github.com/SafdarJamal/campus-recruitment-system/blob/with-mern-stack/LICENSE).
